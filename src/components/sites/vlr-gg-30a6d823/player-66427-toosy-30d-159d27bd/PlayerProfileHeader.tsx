@@ -13,8 +13,8 @@ export function PlayerProfileHeader() {
         <div className={styles.avatar}>
           <Image
             className={styles.avatarImage}
-            src={`${ASSET_ROOT}/player-silhouette.png`}
-            alt="Toosy"
+            src={`${ASSET_ROOT}/tenson.png`}
+            alt="Tenson"
             width={120}
             height={120}
             priority
@@ -24,9 +24,9 @@ export function PlayerProfileHeader() {
         <div className={styles.playerDetails}>
           <div className={styles.nameLine}>
             <h1 id="player-name" className={styles.playerName}>
-              Toosy
+              Tenson
             </h1>
-            <span className={styles.realName}>Wu Yufeng (吴雨峰)</span>
+            <span className={styles.realName}>王志斌</span>
           </div>
 
           <div className={styles.country}>
