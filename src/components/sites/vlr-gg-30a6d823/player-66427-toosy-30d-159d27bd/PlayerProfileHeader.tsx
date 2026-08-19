@@ -26,7 +26,7 @@ export function PlayerProfileHeader() {
             <h1 id="player-name" className={styles.playerName}>
               Tenson
             </h1>
-            <span className={styles.realName}>王志斌</span>
+            <span className={styles.realName}>Wang Zhibin</span>
           </div>
 
           <div className={styles.country}>
@@ -45,7 +45,7 @@ export function PlayerProfileHeader() {
       <nav className={styles.tabs} aria-label="Player profile sections">
         <Link
           className={`${styles.tab} ${styles.activeTab}`}
-          href="/?timespan=30d"
+          href="/player/66427/Tenson/?timespan=30d"
           aria-current="page"
         >
           Overview
