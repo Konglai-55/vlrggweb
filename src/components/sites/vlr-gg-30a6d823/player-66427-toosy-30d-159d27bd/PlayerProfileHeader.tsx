@@ -26,7 +26,7 @@ export function PlayerProfileHeader() {
             <h1 id="player-name" className={styles.playerName}>
               Tenson
             </h1>
-            <span className={styles.realName}>Wang Zhibin</span>
+            <span className={styles.realName}>Wang Zhibin（王志斌）</span>
           </div>
 
           <div className={styles.country}>
