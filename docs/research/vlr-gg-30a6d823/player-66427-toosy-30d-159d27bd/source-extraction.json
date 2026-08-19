@@ -1,0 +1,940 @@
+{
+  "viewports": {
+    "desktop": {
+      "width": 1440,
+      "height": 1200,
+      "contentWidth": 1425,
+      "contentHeight": 1200
+    },
+    "tablet": {
+      "width": 768,
+      "height": 1024,
+      "contentWidth": 753,
+      "contentHeight": 1081
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "contentWidth": 390,
+      "contentHeight": 997
+    }
+  },
+  "title": "Toosy: Valorant Player Profile | VLR.gg",
+  "url": "https://www.vlr.gg/player/66427/toosy/?timespan=30d",
+  "body": {
+    "tag": "body",
+    "id": "",
+    "className": "",
+    "text": "Forums Matches Events Rankings BETA2 Stats Night: ON OFF Spoilers: ON HIDDEN Log in Events Rankings Stats Night: ON OFF Spoilers: ON HIDDEN Log in window['nitroAds'].createAd('float-left-300', { \"refreshLimit\": 0, \"refreshTime\": 30, \"renderVisibleOnly\": false, \"refreshVisibleOnly\": true, \"sizes\": [ [ \"160\", \"600\" ], [ \"300\", \"250\" ], [ \"300\", \"600\" ], [ \"320\", \"480\" ], [ \"320\", \"50\" ], [ \"336\", \"280\" ], [ \"320\", \"100\" ] ], \"report\": { \"enabled\": true, \"wording\": \"Report Ad\", \"position\": \"bottom-",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 1200
+    },
+    "style": {
+      "display": "block",
+      "position": "static",
+      "fontFamily": "Roboto, sans-serif",
+      "fontSize": "12px",
+      "fontWeight": "400",
+      "lineHeight": "12px",
+      "color": "rgb(51, 51, 51)",
+      "backgroundColor": "rgb(198, 198, 198)",
+      "backgroundImage": "url(\"https://www.vlr.gg/img/base/tex.png\")",
+      "padding": "0px",
+      "margin": "0px",
+      "border": "0px none rgb(51, 51, 51)",
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "width": "1440px",
+      "height": "1200px",
+      "maxWidth": "none",
+      "minWidth": "320px",
+      "overflow": "visible",
+      "gridTemplateColumns": "none",
+      "gap": "normal",
+      "flexDirection": "row",
+      "justifyContent": "normal",
+      "alignItems": "normal"
+    }
+  },
+  "headings": [
+    {
+      "tag": "h1",
+      "id": "",
+      "className": "wf-title",
+      "text": "Toosy",
+      "rect": {
+        "x": 304,
+        "y": 86,
+        "width": 64.359375,
+        "height": 28.796875
+      },
+      "style": {
+        "display": "inline-block",
+        "position": "static",
+        "fontFamily": "Roboto, sans-serif",
+        "fontSize": "24px",
+        "fontWeight": "700",
+        "lineHeight": "28.8px",
+        "color": "rgb(68, 68, 68)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "padding": "0px",
+        "margin": "10px 0px 0px",
+        "border": "0px none rgb(68, 68, 68)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "width": "64.3594px",
+        "height": "28.7969px",
+        "maxWidth": "none",
+        "minWidth": "0px",
+        "overflow": "visible",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal"
+      }
+    },
+    {
+      "tag": "h2",
+      "id": "",
+      "className": "player-real-name ge-text-light",
+      "text": "Wu Yufeng (吴雨峰)",
+      "rect": {
+        "x": 374.34375,
+        "y": 95,
+        "width": 139.65625,
+        "height": 16
+      },
+      "style": {
+        "display": "inline-block",
+        "position": "static",
+        "fontFamily": "Roboto, sans-serif",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "16px",
+        "color": "rgb(136, 136, 136)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "padding": "0px",
+        "margin": "0px 0px 0px 3px",
+        "border": "0px none rgb(136, 136, 136)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "width": "139.656px",
+        "height": "16px",
+        "maxWidth": "none",
+        "minWidth": "0px",
+        "overflow": "visible",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal"
+      }
+    },
+    {
+      "tag": "h2",
+      "id": "",
+      "className": "wf-label mod-large",
+      "text": "Recent Results",
+      "rect": {
+        "x": 162,
+        "y": 403,
+        "width": 796,
+        "height": 24
+      },
+      "style": {
+        "display": "block",
+        "position": "static",
+        "fontFamily": "Roboto, sans-serif",
+        "fontSize": "11px",
+        "fontWeight": "700",
+        "lineHeight": "11px",
+        "color": "rgb(68, 68, 68)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "padding": "0px 0px 13px 20px",
+        "margin": "0px",
+        "border": "0px none rgb(68, 68, 68)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "width": "796px",
+        "height": "24px",
+        "maxWidth": "none",
+        "minWidth": "0px",
+        "overflow": "visible",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal"
+      }
+    },
+    {
+      "tag": "h2",
+      "id": "",
+      "className": "wf-label mod-large",
+      "text": "Current Teams",
+      "rect": {
+        "x": 162,
+        "y": 509,
+        "width": 796,
+        "height": 24
+      },
+      "style": {
+        "display": "block",
+        "position": "static",
+        "fontFamily": "Roboto, sans-serif",
+        "fontSize": "11px",
+        "fontWeight": "700",
+        "lineHeight": "11px",
+        "color": "rgb(68, 68, 68)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "padding": "0px 0px 13px 20px",
+        "margin": "0px",
+        "border": "0px none rgb(68, 68, 68)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "width": "796px",
+        "height": "24px",
+        "maxWidth": "none",
+        "minWidth": "0px",
+        "overflow": "visible",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal"
+      }
+    },
+    {
+      "tag": "h2",
+      "id": "",
+      "className": "wf-label mod-large",
+      "text": "Past Teams",
+      "rect": {
+        "x": 162,
+        "y": 627,
+        "width": 796,
+        "height": 24
+      },
+      "style": {
+        "display": "block",
+        "position": "static",
+        "fontFamily": "Roboto, sans-serif",
+        "fontSize": "11px",
+        "fontWeight": "700",
+        "lineHeight": "11px",
+        "color": "rgb(68, 68, 68)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "padding": "0px 0px 13px 20px",
+        "margin": "0px",
+        "border": "0px none rgb(68, 68, 68)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "width": "796px",
+        "height": "24px",
+        "maxWidth": "none",
+        "minWidth": "0px",
+        "overflow": "visible",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal"
+      }
+    },
+    {
+      "tag": "h2",
+      "id": "",
+      "className": "wf-label mod-large",
+      "text": "Latest News",
+      "rect": {
+        "x": 978,
+        "y": 297,
+        "width": 300,
+        "height": 24
+      },
+      "style": {
+        "display": "block",
+        "position": "static",
+        "fontFamily": "Roboto, sans-serif",
+        "fontSize": "11px",
+        "fontWeight": "700",
+        "lineHeight": "11px",
+        "color": "rgb(68, 68, 68)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "padding": "0px 0px 13px 20px",
+        "margin": "0px",
+        "border": "0px none rgb(68, 68, 68)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "width": "300px",
+        "height": "24px",
+        "maxWidth": "none",
+        "minWidth": "0px",
+        "overflow": "visible",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal"
+      }
+    },
+    {
+      "tag": "h2",
+      "id": "",
+      "className": "wf-label mod-large",
+      "text": "Event Placements",
+      "rect": {
+        "x": 978,
+        "y": 422.59375,
+        "width": 300,
+        "height": 24
+      },
+      "style": {
+        "display": "block",
+        "position": "static",
+        "fontFamily": "Roboto, sans-serif",
+        "fontSize": "11px",
+        "fontWeight": "700",
+        "lineHeight": "11px",
+        "color": "rgb(68, 68, 68)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "padding": "0px 0px 13px 20px",
+        "margin": "0px",
+        "border": "0px none rgb(68, 68, 68)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "width": "300px",
+        "height": "24px",
+        "maxWidth": "none",
+        "minWidth": "0px",
+        "overflow": "visible",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "tag": "header",
+      "id": "",
+      "className": "header",
+      "text": "Forums Matches Events Rankings BETA2 Stats Night: ON OFF Spoilers: ON HIDDEN Log in Events Rankings Stats Night: ON OFF Spoilers: ON HIDDEN Log in",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 55
+      },
+      "style": {
+        "display": "block",
+        "position": "relative",
+        "fontFamily": "Roboto, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "lineHeight": "12px",
+        "color": "rgb(51, 51, 51)",
+        "backgroundColor": "rgb(54, 54, 54)",
+        "backgroundImage": "none",
+        "padding": "0px",
+        "margin": "0px",
+        "border": "0px none rgb(51, 51, 51)",
+        "borderRadius": "0px",
+        "boxShadow": "rgba(0, 0, 0, 0.6) 0px 0px 2px 0px",
+        "width": "1440px",
+        "height": "55px",
+        "maxWidth": "none",
+        "minWidth": "320px",
+        "overflow": "visible",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal"
+      }
+    },
+    {
+      "tag": "nav",
+      "id": "",
+      "className": "header-inner ",
+      "text": "Forums Matches Events Rankings BETA2 Stats Night: ON OFF Spoilers: ON HIDDEN Log in Events Rankings Stats Night: ON OFF Spoilers: ON HIDDEN Log in",
+      "rect": {
+        "x": 140,
+        "y": 0,
+        "width": 1160,
+        "height": 55
+      },
+      "style": {
+        "display": "flex",
+        "position": "relative",
+        "fontFamily": "Roboto, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "lineHeight": "12px",
+        "color": "rgb(51, 51, 51)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "padding": "0px",
+        "margin": "0px 140px",
+        "border": "0px none rgb(51, 51, 51)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "width": "1160px",
+        "height": "55px",
+        "maxWidth": "1160px",
+        "minWidth": "320px",
+        "overflow": "visible",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal"
+      }
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "className": "col mod-1",
+      "text": "Toosy Wu Yufeng (吴雨峰) CHINA Overview Match History Agents PAST: 30d 60d 90d all No agent data available for this period Recent Results No match history Current Teams Trace Esports joined in August 2026 Past Teams Havoc & Yonder Gaming Latest News 2026/08/01 Toosy slides into Trace Esports' roster ahead of Stage 2 Play-Ins Event Placements Total Winnings $0",
+      "rect": {
+        "x": 162,
+        "y": 79,
+        "width": 1116,
+        "height": 666
+      },
+      "style": {
+        "display": "block",
+        "position": "static",
+        "fontFamily": "Roboto, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "lineHeight": "12px",
+        "color": "rgb(51, 51, 51)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "padding": "0px",
+        "margin": "0px",
+        "border": "0px none rgb(51, 51, 51)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "width": "1116px",
+        "height": "666px",
+        "maxWidth": "none",
+        "minWidth": "0px",
+        "overflow": "visible",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal"
+      }
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "className": "wf-card mod-header mod-full",
+      "text": "Toosy Wu Yufeng (吴雨峰) CHINA Overview Match History",
+      "rect": {
+        "x": 140,
+        "y": 54,
+        "width": 1160,
+        "height": 219
+      },
+      "style": {
+        "display": "block",
+        "position": "relative",
+        "fontFamily": "Roboto, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "lineHeight": "12px",
+        "color": "rgb(51, 51, 51)",
+        "backgroundColor": "rgb(250, 250, 249)",
+        "backgroundImage": "none",
+        "padding": "0px",
+        "margin": "-25px -22px 24px",
+        "border": "0px none rgb(51, 51, 51)",
+        "borderRadius": "0px",
+        "boxShadow": "rgba(0, 0, 0, 0.35) 0px 0px 2px 0px",
+        "width": "1160px",
+        "height": "219px",
+        "maxWidth": "none",
+        "minWidth": "0px",
+        "overflow": "visible",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal"
+      }
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "className": "player-header",
+      "text": "Toosy Wu Yufeng (吴雨峰) CHINA",
+      "rect": {
+        "x": 140,
+        "y": 54,
+        "width": 1160,
+        "height": 164
+      },
+      "style": {
+        "display": "flex",
+        "position": "static",
+        "fontFamily": "Roboto, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "lineHeight": "12px",
+        "color": "rgb(51, 51, 51)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "backgroundImage": "none",
+        "padding": "22px",
+        "margin": "0px",
+        "border": "0px none rgb(51, 51, 51)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "width": "1160px",
+        "height": "164px",
+        "maxWidth": "none",
+        "minWidth": "0px",
+        "overflow": "visible",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal"
+      }
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "className": "wf-card",
+      "text": "No agent data available for this period",
+      "rect": {
+        "x": 162,
+        "y": 321,
+        "width": 796,
+        "height": 60
+      },
+      "style": {
+        "display": "block",
+        "position": "relative",
+        "fontFamily": "Roboto, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "lineHeight": "60px",
+        "color": "rgb(51, 51, 51)",
+        "backgroundColor": "rgb(250, 250, 249)",
+        "backgroundImage": "none",
+        "padding": "0px",
+        "margin": "0px 0px 22px",
+        "border": "0px none rgb(51, 51, 51)",
+        "borderRadius": "0px",
+        "boxShadow": "rgba(0, 0, 0, 0.4) 0px 1px 3px -1px",
+        "width": "796px",
+        "height": "60px",
+        "maxWidth": "none",
+        "minWidth": "0px",
+        "overflow": "hidden",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal"
+      }
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "className": "wf-card",
+      "text": "No match history",
+      "rect": {
+        "x": 162,
+        "y": 427,
+        "width": 796,
+        "height": 60
+      },
+      "style": {
+        "display": "block",
+        "position": "relative",
+        "fontFamily": "Roboto, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "lineHeight": "60px",
+        "color": "rgb(51, 51, 51)",
+        "backgroundColor": "rgb(250, 250, 249)",
+        "backgroundImage": "none",
+        "padding": "0px",
+        "margin": "0px 0px 22px",
+        "border": "0px none rgb(51, 51, 51)",
+        "borderRadius": "0px",
+        "boxShadow": "rgba(0, 0, 0, 0.4) 0px 1px 3px -1px",
+        "width": "796px",
+        "height": "60px",
+        "maxWidth": "none",
+        "minWidth": "0px",
+        "overflow": "hidden",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal"
+      }
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "className": "wf-card",
+      "text": "Trace Esports joined in August 2026",
+      "rect": {
+        "x": 162,
+        "y": 533,
+        "width": 796,
+        "height": 72
+      },
+      "style": {
+        "display": "block",
+        "position": "relative",
+        "fontFamily": "Roboto, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "lineHeight": "12px",
+        "color": "rgb(51, 51, 51)",
+        "backgroundColor": "rgb(250, 250, 249)",
+        "backgroundImage": "none",
+        "padding": "0px",
+        "margin": "0px 0px 22px",
+        "border": "0px none rgb(51, 51, 51)",
+        "borderRadius": "0px",
+        "boxShadow": "rgba(0, 0, 0, 0.4) 0px 1px 3px -1px",
+        "width": "796px",
+        "height": "72px",
+        "maxWidth": "none",
+        "minWidth": "0px",
+        "overflow": "hidden",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal"
+      }
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "className": "wf-card",
+      "text": "Havoc & Yonder Gaming",
+      "rect": {
+        "x": 162,
+        "y": 651,
+        "width": 796,
+        "height": 72
+      },
+      "style": {
+        "display": "block",
+        "position": "relative",
+        "fontFamily": "Roboto, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "lineHeight": "12px",
+        "color": "rgb(51, 51, 51)",
+        "backgroundColor": "rgb(250, 250, 249)",
+        "backgroundImage": "none",
+        "padding": "0px",
+        "margin": "0px 0px 22px",
+        "border": "0px none rgb(51, 51, 51)",
+        "borderRadius": "0px",
+        "boxShadow": "rgba(0, 0, 0, 0.4) 0px 1px 3px -1px",
+        "width": "796px",
+        "height": "72px",
+        "maxWidth": "none",
+        "minWidth": "0px",
+        "overflow": "hidden",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal"
+      }
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "className": "wf-card",
+      "text": "2026/08/01 Toosy slides into Trace Esports' roster ahead of Stage 2 Play-Ins",
+      "rect": {
+        "x": 978,
+        "y": 321,
+        "width": 300,
+        "height": 79.59375
+      },
+      "style": {
+        "display": "block",
+        "position": "relative",
+        "fontFamily": "Roboto, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "lineHeight": "12px",
+        "color": "rgb(51, 51, 51)",
+        "backgroundColor": "rgb(250, 250, 249)",
+        "backgroundImage": "none",
+        "padding": "0px",
+        "margin": "0px 0px 22px",
+        "border": "0px none rgb(51, 51, 51)",
+        "borderRadius": "0px",
+        "boxShadow": "rgba(0, 0, 0, 0.4) 0px 1px 3px -1px",
+        "width": "300px",
+        "height": "79.5938px",
+        "maxWidth": "none",
+        "minWidth": "0px",
+        "overflow": "hidden",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal"
+      }
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "className": "wf-card",
+      "text": "Total Winnings $0",
+      "rect": {
+        "x": 978,
+        "y": 446.59375,
+        "width": 300,
+        "height": 76
+      },
+      "style": {
+        "display": "block",
+        "position": "relative",
+        "fontFamily": "Roboto, sans-serif",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "lineHeight": "12px",
+        "color": "rgb(51, 51, 51)",
+        "backgroundColor": "rgb(250, 250, 249)",
+        "backgroundImage": "none",
+        "padding": "0px",
+        "margin": "0px 0px 22px",
+        "border": "0px none rgb(51, 51, 51)",
+        "borderRadius": "0px",
+        "boxShadow": "rgba(0, 0, 0, 0.4) 0px 1px 3px -1px",
+        "width": "300px",
+        "height": "76px",
+        "maxWidth": "none",
+        "minWidth": "0px",
+        "overflow": "hidden",
+        "gridTemplateColumns": "none",
+        "gap": "normal",
+        "flexDirection": "row",
+        "justifyContent": "normal",
+        "alignItems": "normal"
+      }
+    }
+  ],
+  "assets": {
+    "images": [
+      {
+        "src": "https://www.vlr.gg/img/vlr/logo_header.png",
+        "alt": "",
+        "width": 800,
+        "height": 800,
+        "className": "header-logo-logo"
+      },
+      {
+        "src": "https://www.vlr.gg/img/base/ph/sil.png",
+        "alt": "",
+        "width": 500,
+        "height": 500,
+        "className": ""
+      },
+      {
+        "src": "https://owcdn.net/img/6433a2cc3ae72.png",
+        "alt": "",
+        "width": 200,
+        "height": 200,
+        "className": ""
+      },
+      {
+        "src": "https://www.vlr.gg/img/vlr/tmp/vlr.png",
+        "alt": "",
+        "width": 200,
+        "height": 200,
+        "className": ""
+      },
+      {
+        "src": "https://www.vlr.gg/img/icons/social/discord.svg",
+        "alt": "",
+        "width": 153,
+        "height": 150,
+        "className": "mod-discord"
+      }
+    ],
+    "backgrounds": [
+      {
+        "tag": "HTML",
+        "className": "",
+        "backgroundImage": "url(\"https://www.vlr.gg/img/base/tex.png\")"
+      },
+      {
+        "tag": "BODY",
+        "className": "",
+        "backgroundImage": "url(\"https://www.vlr.gg/img/base/tex.png\")"
+      },
+      {
+        "tag": "I",
+        "className": "flag mod-cn",
+        "backgroundImage": "image-set(url(\"https://www.vlr.gg/img/icons/flags/16/cn.png\") 1dppx, url(\"https://www.vlr.gg/img/icons/flags/32/cn.png\") 2dppx)"
+      }
+    ],
+    "stylesheets": [
+      "https://fonts.googleapis.com/css?family=Roboto:400,400italic,300,700,500,900",
+      "https://www.vlr.gg/css/base/main.css?v=1785648556",
+      "https://www.vlr.gg/css/base/r.css?v=1787015309",
+      "https://www.vlr.gg/css/base/pages/player.css?v=1783983780",
+      "https://www.vlr.gg/css/base/pages/r/player.css?v=1657039802",
+      "https://www.vlr.gg/css/base/pages/stats.css?v=1783983780"
+    ],
+    "icons": [
+      "https://www.vlr.gg/favicon.ico?v=1783762162",
+      "https://www.vlr.gg/img/vlr/apple-touch-icon.png?v=1783762162"
+    ]
+  },
+  "links": [
+    {
+      "text": "Forums",
+      "href": "https://www.vlr.gg/forums",
+      "className": "header-nav-item mod-forums mod-vlr "
+    },
+    {
+      "text": "Matches",
+      "href": "https://www.vlr.gg/matches",
+      "className": "header-nav-item mod-matches mod-vlr "
+    },
+    {
+      "text": "Events",
+      "href": "https://www.vlr.gg/events",
+      "className": "header-nav-item mod-events mod-vlr "
+    },
+    {
+      "text": "Rankings BETA2",
+      "href": "https://www.vlr.gg/rankings",
+      "className": "header-nav-item mod-rankings mod-vlr "
+    },
+    {
+      "text": "Stats",
+      "href": "https://www.vlr.gg/stats",
+      "className": "header-nav-item mod-stats mod-vlr "
+    },
+    {
+      "text": "Log in",
+      "href": "https://www.vlr.gg/login",
+      "className": "header-nav-item mod-login "
+    },
+    {
+      "text": "Events",
+      "href": "https://www.vlr.gg/events",
+      "className": "header-menu-item mod-mobile mod-events"
+    },
+    {
+      "text": "Rankings",
+      "href": "https://www.vlr.gg/rankings",
+      "className": "header-menu-item mod-mobile mod-rankings"
+    },
+    {
+      "text": "Stats",
+      "href": "https://www.vlr.gg/stats",
+      "className": "header-menu-item mod-mobile mod-stats"
+    },
+    {
+      "text": "Log in",
+      "href": "https://www.vlr.gg/login",
+      "className": "header-menu-item"
+    },
+    {
+      "text": "Overview",
+      "href": "https://www.vlr.gg/player/66427/toosy",
+      "className": "wf-nav-item mod-first mod-active"
+    },
+    {
+      "text": "Match History",
+      "href": "https://www.vlr.gg/player/matches/66427/toosy",
+      "className": "wf-nav-item "
+    },
+    {
+      "text": "30d",
+      "href": "https://www.vlr.gg/player/66427/toosy/?timespan=30d",
+      "className": "player-stats-filter-btn mod-active"
+    },
+    {
+      "text": "60d",
+      "href": "https://www.vlr.gg/player/66427/toosy/?timespan=60d",
+      "className": "player-stats-filter-btn "
+    },
+    {
+      "text": "90d",
+      "href": "https://www.vlr.gg/player/66427/toosy/?timespan=90d",
+      "className": "player-stats-filter-btn "
+    },
+    {
+      "text": "all",
+      "href": "https://www.vlr.gg/player/66427/toosy/?timespan=all",
+      "className": "player-stats-filter-btn "
+    },
+    {
+      "text": "Trace Esports joined in August 2026",
+      "href": "https://www.vlr.gg/team/12685/trace-esports",
+      "className": "wf-module-item mod-first"
+    },
+    {
+      "text": "Havoc & Yonder Gaming",
+      "href": "https://www.vlr.gg/team/21917/havoc-yonder-gaming",
+      "className": "wf-module-item mod-first"
+    },
+    {
+      "text": "2026/08/01 Toosy slides into Trace Esports' roster ahead of Stage 2 Play-Ins",
+      "href": "https://www.vlr.gg/728011/toosy-slides-into-trace-esports-roster-ahead-of-stage-2-play-ins",
+      "className": "wf-module-item mod-first"
+    },
+    {
+      "text": "Contact",
+      "href": "mailto:community@VLR.gg",
+      "className": "contact"
+    },
+    {
+      "text": "Privacy",
+      "href": "https://www.vlr.gg/privacy",
+      "className": "privacy"
+    },
+    {
+      "text": "Terms",
+      "href": "https://www.vlr.gg/terms",
+      "className": "privacy"
+    },
+    {
+      "text": "Twitter",
+      "href": "https://twitter.com/vlrdotgg",
+      "className": "social mod-twitter"
+    },
+    {
+      "text": "Discord",
+      "href": "https://discord.com/invite/VLR",
+      "className": "social mod-discord"
+    }
+  ]
+}

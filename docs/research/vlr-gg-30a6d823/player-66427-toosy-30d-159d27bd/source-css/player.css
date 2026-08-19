@@ -1,0 +1,262 @@
+.mod-bg-red, .mod-bg-after-red:after {
+  background: #da4444 !important; }
+
+.mod-bg-orange, .mod-bg-after-orange:after {
+  background: #ee9649 !important; }
+
+.mod-bg-yellow, .mod-bg-after-yellow:after {
+  background: #f4d35d !important; }
+
+.mod-bg-pink, .mod-bg-after-pink:after {
+  background: #c169c9 !important; }
+
+.mod-bg-green, .mod-bg-after-green:after {
+  background: #28af98 !important; }
+
+.mod-bg-blue, .mod-bg-after-blue:after {
+  background: #2288aa !important; }
+
+.mod-bg-purple, .mod-bg-after-purple:after {
+  background: #7169c9 !important; }
+
+.mod-bg-striped_purple, .mod-bg-after-striped_purple:after {
+  background: repeating-linear-gradient(-45deg, #958fd6 -2px, #958fd6 4px, #3c31b4 4px, #3c31b4 8px) !important; }
+
+.mod-bg-striped_redyellow, .mod-bg-after-striped_redyellow:after {
+  background: repeating-linear-gradient(-45deg, #da4444 0px, #da4444 6px, #f4d35d 6px, #f4d35d 12px) !important; }
+
+.mod-bg-vct_cn, .mod-bg-after-vct_cn:after {
+  background: repeating-linear-gradient(-45deg, #db0f0f 0px, #db0f0f 6px, #f8a0a0 6px, #f8a0a0 12px) !important;
+  background: #da4444 !important; }
+
+.mod-bg-vct_pac, .mod-bg-after-vct_pac:after {
+  background: repeating-linear-gradient(-45deg, #2288aa 0px, #2288aa 6px, #7fcce6 6px, #7fcce6 12px) !important; }
+
+.mod-bg-vct_emea, .mod-bg-after-vct_emea:after {
+  background: repeating-linear-gradient(-45deg, #f8bb59 0px, #f8bb59 6px, #7f5105 6px, #7f5105 12px) !important; }
+
+.mod-bg-vct_amer, .mod-bg-after-vct_amer:after {
+  background: repeating-linear-gradient(-45deg, #ffa238 0px, #ffa238 6px, #ffd29e 6px, #ffd29e 12px) !important; }
+
+:where([data-theme="dark"]) .mod-bg-striped_purple,
+:where([data-theme="dark"]) .mod-bg-after-striped_purple:after {
+  background: repeating-linear-gradient(-45deg, #b8b4e4 -2px, #b8b4e4 4px, #7b73d9 4px, #7b73d9 8px) !important; }
+
+.rm-item {
+  height: 58px; }
+
+.rm-item.mod-none {
+  font-style: italic;
+  color: #888;
+  justify-content: center; }
+
+.rm-item-event {
+  flex: 1;
+  width: 100px;
+  min-width: 0;
+  padding-right: 25px; }
+
+.rm-item-event-series {
+  color: #888; }
+
+.rm-item-score {
+  color: #aaa;
+  margin-right: 10px; }
+
+.rm-item-score-eta {
+  color: #76BC87;
+  font-weight: 500;
+  margin-left: 2px; }
+
+.rm-item-vs {
+  font-style: italic;
+  color: #aaa;
+  margin-right: 10px; }
+
+.rm-item-self {
+  width: 28px;
+  margin-right: 8px; }
+  .rm-item-self img {
+    width: 28px;
+    height: 28px; }
+
+.rm-item-opponent {
+  width: 260px;
+  display: flex;
+  align-items: center; }
+  .rm-item-opponent img {
+    width: 28px;
+    height: 28px;
+    margin-right: 8px; }
+  .rm-item-opponent div {
+    font-weight: 500; }
+  .rm-item-opponent span {
+    font-style: italic; }
+
+.rm-item-opponent.mod-full {
+  width: 320px; }
+
+.rm-item-opponent.mod-trunc {
+  width: 240px; }
+
+.rm-item-vods {
+  color: #aaa;
+  text-align: right;
+  width: 140px; }
+
+.rm-item-date {
+  width: 90px;
+  text-align: right;
+  line-height: 1.5; }
+
+html[data-theme="dark"] .player-stats-filter-btn.mod-active {
+  background: #da626c; }
+html[data-theme="dark"] .player-stats-filter-btn:hover {
+  background: #222; }
+
+.wf-table th {
+  padding: 12px 10px; }
+
+.st-table.mod-agent-rows {
+  min-width: 797px;
+  font-size: 11px;
+  --st-cw: 48px;
+  --st-ch: 48px; }
+
+.st-table.mod-agent-rows tbody tr {
+  contain-intrinsic-size: auto 48px; }
+
+.st-table.mod-agent-rows th.mod-agent,
+.st-table.mod-agent-rows td.mod-agent {
+  width: 49px;
+  text-align: left; }
+
+.st-table.mod-agent-rows td.mod-agent img {
+  display: block;
+  width: 28px;
+  height: 28px;
+  background: #ccc;
+  border-radius: 2px;
+  image-rendering: -webkit-optimize-contrast; }
+
+.st-table.mod-agent-rows th.mod-use,
+.st-table.mod-agent-rows td.mod-use {
+  width: 76px; }
+
+.st-table.mod-agent-rows td.mod-use {
+  white-space: nowrap; }
+
+@media (max-width: 680px) {
+  .st-table.mod-agent-rows {
+    min-width: 756px;
+    --st-cw: 46px;
+    --st-ch: 44px; }
+
+  .st-table.mod-agent-rows tbody tr {
+    contain-intrinsic-size: auto 44px; }
+
+  .st-table.mod-agent-rows th.mod-agent,
+  .st-table.mod-agent-rows td.mod-agent {
+    width: 42px; }
+
+  .st-table.mod-agent-rows td.mod-agent img {
+    width: 25px;
+    height: 25px; }
+
+  .st-table.mod-agent-rows th.mod-use,
+  .st-table.mod-agent-rows td.mod-use {
+    width: 70px; } }
+.player-stats-filter {
+  display: flex;
+  font-size: 11px;
+  margin-top: -3px;
+  padding-right: 5px; }
+
+.player-stats-filter-label {
+  margin-right: 5px;
+  height: 17px;
+  line-height: 17px;
+  font-weight: 500; }
+
+.player-stats-filter-btn {
+  border-radius: 2px;
+  height: 17px;
+  line-height: 17px;
+  padding: 0 4px;
+  margin-left: 4px;
+  text-transform: capitalize; }
+
+.player-stats-filter-btn:hover {
+  background: #aaa; }
+
+.player-stats-filter-btn.mod-active {
+  background: #444;
+  color: #fff; }
+
+.player-real-name {
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 3px;
+  color: #888; }
+
+.player-summary-container {
+  display: flex; }
+
+.player-summary-container-1 {
+  flex: 1;
+  min-width: 0; }
+
+.player-summary-container-2 {
+  flex: 0 0 320px;
+  padding-left: 20px; }
+
+.player-header {
+  padding: 22px;
+  display: flex; }
+
+.flag {
+  vertical-align: -1px;
+  margin-right: 2px; }
+
+.player-event-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px; }
+
+.player-event-item:before {
+  content: '';
+  width: 3px;
+  height: 100%;
+  background: #aaa;
+  left: 0;
+  top: 0;
+  position: absolute; }
+
+.player-event-item.mod-pink:before {
+  background: #c169c9; }
+
+.player-event-item.mod-red:before {
+  background: #da4444; }
+
+.player-event-item.mod-orange:before {
+  background: #ee9649; }
+
+.player-event-item.mod-green:before {
+  background: #28af98; }
+
+.player-event-item.mod-blue:before {
+  background: #2288aa; }
+
+.player-event-item.mod-purple:before {
+  background: #7169c9; }
+
+.wf-avatar.mod-player > div {
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  width: 100%;
+  height: 100%; }
+
+:where([data-theme="dark"]) .player-real-name {
+  color: #b4b4b4; }

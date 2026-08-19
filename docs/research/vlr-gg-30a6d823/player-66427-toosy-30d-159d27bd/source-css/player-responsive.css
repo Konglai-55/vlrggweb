@@ -1,0 +1,243 @@
+@media (max-width: 920px) {
+  .m-item-vods {
+    margin: 0 10px;
+    display: none; }
+
+  .m-item-date {
+    flex: 1; }
+
+  .m-item-games-spacing-l {
+    width: 10px; }
+
+  .m-item-games-spacing-r {
+    width: 0px; } }
+@media (max-width: 800px) {
+  .m-item-result {
+    margin: 0 10px; }
+
+  .m-item-team {
+    width: 100px; }
+
+  .m-item-date {
+    padding-right: 15px; }
+
+  .m-item-games-result {
+    margin: 0 12px; }
+
+  .m-item-games-spacing-l {
+    width: 16px; } }
+@media (max-width: 620px) {
+  a.m-item {
+    height: 52px; }
+
+  .m-item-games-item {
+    height: 44px; }
+
+  .m-item-games-result > div {
+    line-height: 1.8; }
+
+  .m-item-thumb {
+    padding: 0 8px; }
+
+  .m-item-thumb img {
+    width: 30px;
+    height: 30px; }
+
+  .m-item-logo img {
+    width: 24px;
+    height: 24px; }
+
+  .m-item-team-core {
+    font-size: 11px; }
+
+  .m-item-event {
+    display: none; }
+
+  .m-item-team {
+    width: calc(50% - 60px - 60px); }
+
+  .m-item-team-name {
+    display: none; }
+
+  .m-item-team-tag {
+    display: inline; }
+
+  .m-item-result {
+    font-size: 11px;
+    flex: 0 0 46px; }
+    .m-item-result div {
+      margin: 0 1px; }
+
+  .m-item-date {
+    width: 70px;
+    padding-right: 10px;
+    font-size: 10px; }
+    .m-item-date div {
+      margin-bottom: 6px; }
+
+  .m-item-games {
+    padding-left: 46px; }
+
+  .m-item-games-result {
+    width: 46px; }
+    .m-item-games-result .score {
+      font-size: 10px; }
+
+  .m-item-games-comp {
+    width: 130px; }
+
+  .m-item-games-comp-div {
+    margin: 0 2px;
+    height: 20px;
+    line-height: 20px; }
+
+  .m-item-games-comp-group img {
+    width: 20px;
+    height: 20px; }
+
+  .m-item-games-spacing-l {
+    width: 0; }
+
+  .m-item-games-spacing-r {
+    width: 64px; } }
+@media (max-width: 460px) {
+  .m-item-games {
+    padding-left: 0px; }
+
+  .m-item-games-comp-group {
+    gap: 0; }
+    .m-item-games-comp-group img {
+      margin: 0 1px; }
+
+  .m-item-games-comp-div {
+    display: none; }
+
+  .m-item-games-spacing-r {
+    width: 18px; }
+
+  .m-item-games-all {
+    display: none; } }
+@media (max-width: 1080px) {
+  .player-summary-container {
+    display: block; }
+
+  .player-summary-container-2 {
+    padding-left: 0; }
+
+  .flex-nr {
+    display: none; }
+
+  .flex-nr.mod-4 {
+    display: block !important; }
+
+  .team-roster-item {
+    width: 25%; }
+
+  .rm-item-opponent {
+    width: 350px; } }
+@media (max-width: 1000px) {
+  .team-summary-container {
+    display: block; }
+
+  .team-summary-container-2 {
+    padding-left: 0; }
+
+  .flex-nr {
+    display: none; }
+
+  .flex-nr.mod-4 {
+    display: none !important; }
+
+  .flex-nr.mod-3 {
+    display: block !important; }
+
+  .team-roster-item {
+    width: 33%; }
+
+  .rm-item-opponent {
+    width: 300px; }
+
+  .rm-item-opponent.mod-full {
+    width: 250px; } }
+@media (max-width: 900px) {
+  .rm-item-opponent {
+    width: 250px; }
+
+  .rm-item-opponent.mod-full {
+    width: 200px; } }
+@media (max-width: 840px) {
+  .team-rating-history {
+    display: none; }
+
+  .team-rating-info {
+    padding-bottom: 20px; }
+
+  .rm-item-vods {
+    width: 70px; }
+
+  .wf-tag .full {
+    display: none; }
+  .wf-tag .abbr {
+    display: inline; }
+
+  .rm-item-opponent.mod-full {
+    width: 180px; } }
+@media (max-width: 780px) {
+  .team-summary-container {
+    display: block; }
+
+  .team-summary-container-2 {
+    padding-left: 0; }
+
+  .flex-nr {
+    display: none; }
+
+  .flex-nr.mod-4, .flex-nr.mod-3 {
+    display: none !important; }
+
+  .flex-nr.mod-2 {
+    display: block; }
+
+  .team-roster-item {
+    width: 50%; }
+
+  .rm-item-opponent {
+    width: 200px; } }
+@media (max-width: 720px) {
+  .player-stats-filter {
+    font-size: 10px;
+    margin-top: -3px; }
+
+  .player-real-name {
+    display: inline-block;
+    font-size: 13px;
+    margin-left: 3px;
+    color: #888; }
+
+  .team-maps-item {
+    padding: 15px; }
+
+  .rm-item-opponent {
+    width: 180px; } }
+@media (max-width: 600px) {
+  .team-maps-item {
+    flex-wrap: wrap; }
+
+  .team-maps-item-circle {
+    margin-bottom: 20px; }
+
+  .team-maps .map-name {
+    padding-left: 0;
+    min-width: 0; }
+
+  .rm-item-opponent {
+    width: 140px; } }
+@media (max-width: 560px) {
+  .rm-item-event {
+    display: none; }
+
+  .rm-item-opponent {
+    flex: 1; } }
+@media (max-width: 480px) {
+  .rating-num {
+    font-size: 16px !important; } }

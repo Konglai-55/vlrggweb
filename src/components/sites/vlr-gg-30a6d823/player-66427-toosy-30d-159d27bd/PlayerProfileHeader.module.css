@@ -1,0 +1,204 @@
+.profileShell {
+  width: min(100%, 1160px);
+  margin: 0 auto;
+  color: #444;
+  background: #fff;
+}
+
+.identity {
+  box-sizing: border-box;
+  display: flex;
+  height: 163px;
+  padding: 21px 22px;
+}
+
+.avatar {
+  box-sizing: border-box;
+  width: 120px;
+  height: 120px;
+  flex: 0 0 120px;
+  padding: 3px;
+  margin-right: 22px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 0 0.5px 1px 1px rgb(0 0 0 / 2%);
+}
+
+.avatarImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #eee;
+}
+
+.playerDetails {
+  min-width: 0;
+  padding-top: 9px;
+}
+
+.nameLine {
+  display: flex;
+  align-items: baseline;
+  min-width: 0;
+}
+
+.playerName {
+  margin: 0;
+  color: #444;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.realName {
+  margin-left: 4px;
+  overflow: hidden;
+  color: #888;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.country {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 14px;
+  color: #777;
+  font-size: 11px;
+  line-height: 1;
+}
+
+.flag {
+  display: block;
+  width: 16px;
+  height: 11px;
+  object-fit: cover;
+}
+
+.tabs {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  height: 56px;
+  padding: 0 21px;
+  border-top: 1px solid #d4d4d4;
+  border-bottom: 1px solid #c8c8c8;
+}
+
+.tab {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 90px;
+  height: 55px;
+  padding: 3px 20px 0;
+  color: #0076b9;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+  border-right: 1px solid #d4d4d4;
+}
+
+.tab:first-child {
+  border-left: 1px solid #d4d4d4;
+}
+
+.tab:not(.activeTab):hover {
+  background: #eee;
+}
+
+.activeTab {
+  color: #222;
+  cursor: default;
+  border-top: 3px solid #d1545d;
+  padding-top: 0;
+}
+
+.activeTab::before {
+  position: absolute;
+  bottom: -6px;
+  left: calc(50% - 5px);
+  z-index: 2;
+  width: 10px;
+  height: 10px;
+  content: "";
+  background: #dadadc;
+  box-shadow: inset 1px 1px 3px -2px rgb(0 0 0 / 75%);
+  transform: rotate(45deg);
+}
+
+.activeTab::after {
+  position: absolute;
+  bottom: -9px;
+  left: calc(50% - 8px);
+  z-index: 3;
+  width: 16px;
+  height: 8px;
+  content: "";
+  background: #dadadc;
+}
+
+@media (max-width: 720px) {
+  .identity {
+    height: 125px;
+    padding: 14px 12px;
+  }
+
+  .avatar {
+    width: 96px;
+    height: 96px;
+    flex-basis: 96px;
+    margin-right: 15px;
+  }
+
+  .playerDetails {
+    padding-top: 10px;
+  }
+
+  .playerName {
+    font-size: 20px;
+  }
+
+  .realName {
+    margin-left: 3px;
+    font-size: 13px;
+  }
+
+  .country {
+    margin-top: 13px;
+  }
+
+  .tabs {
+    width: 100%;
+    height: 54px;
+    padding: 0 12px;
+  }
+
+  .tab {
+    min-width: 0;
+    height: 53px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 11px;
+  }
+
+  .activeTab {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 390px) {
+  .playerName {
+    font-size: 15px;
+  }
+}
