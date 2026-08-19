@@ -8,13 +8,20 @@ import styles from "./SiteHeader.module.css";
 const assetRoot =
   "/sites/vlr-gg-30a6d823/player-66427-toosy-30d-159d27bd";
 
-const mainLinks = ["Forums", "Matches", "Events"];
-
 function NavLink({ children, className = "" }: { children: React.ReactNode; className?: string }) {
   return (
     <a className={`${styles.navItem} ${className}`} href="#">
       {children}
     </a>
+  );
+}
+
+function SignInIcon() {
+  return (
+    <svg className={styles.drawerLoginIcon} viewBox="0 0 512 512" aria-hidden="true">
+      <path d="M336 376V136c0-13.3-10.7-24-24-24H184V40h128c53 0 96 43 96 96v240c0 53-43 96-96 96H184v-72h128c13.3 0 24-10.7 24-24Z" />
+      <path d="M224 128 352 256 224 384v-80H32v-96h192v-80Z" />
+    </svg>
   );
 }
 
@@ -42,30 +49,30 @@ export function SiteHeader() {
         </form>
 
         <a className={`${styles.navItem} ${styles.mobileSearch}`} href="#">
-          Search..
+          <span>Search...</span>
         </a>
 
-        {mainLinks.map((label) => (
-          <NavLink key={label}>{label}</NavLink>
-        ))}
+        <NavLink className={styles.forums}>Forums</NavLink>
+        <NavLink className={styles.matches}>Matches</NavLink>
+        <NavLink className={styles.events}>Events</NavLink>
 
-        <NavLink className={styles.desktopOnly}>
+        <NavLink className={`${styles.desktopOnly} ${styles.rankings}`}>
           <span className={styles.rankingLabel}>Rankings</span>
           <span className={styles.beta}>BETA2</span>
         </NavLink>
-        <NavLink className={styles.desktopOnly}>Stats</NavLink>
+        <NavLink className={`${styles.desktopOnly} ${styles.stats}`}>Stats</NavLink>
 
         <div className={styles.spacer} aria-hidden="true" />
 
         <NavLink className={`${styles.desktopOnly} ${styles.toggle}`}>
-          <span>Night:</span>
+          <span className={styles.toggleLabel}><i className={styles.moonIcon} aria-hidden="true" />Night:</span>
           <strong>OFF</strong>
         </NavLink>
         <NavLink className={`${styles.desktopOnly} ${styles.toggle}`}>
-          <span>Spoilers:</span>
+          <span className={styles.toggleLabel}><i className={styles.spoilerIcon} aria-hidden="true">!</i>Spoilers:</span>
           <strong className={styles.on}>ON</strong>
         </NavLink>
-        <NavLink className={styles.desktopOnly}>Log in</NavLink>
+        <NavLink className={`${styles.desktopOnly} ${styles.login}`}>Log in<i className={styles.loginIcon} aria-hidden="true" /></NavLink>
 
         <button
           className={styles.menuButton}
@@ -82,11 +89,11 @@ export function SiteHeader() {
 
         {menuOpen && (
           <nav className={styles.drawer} id="vlr-mobile-menu" aria-label="More navigation">
-            <a href="#">Rankings <small>BETA2</small></a>
+            <a href="#">Rankings</a>
             <a href="#">Stats</a>
-            <a href="#">Night mode <b>OFF</b></a>
-            <a href="#">Spoilers <b className={styles.on}>ON</b></a>
-            <a href="#">Log in</a>
+            <a href="#"><span>Night:</span><b className={styles.off}>OFF</b></a>
+            <a href="#"><span>Spoilers:</span><b className={styles.on}>ON</b></a>
+            <a href="#"><SignInIcon /><span>Log in</span></a>
           </nav>
         )}
       </div>

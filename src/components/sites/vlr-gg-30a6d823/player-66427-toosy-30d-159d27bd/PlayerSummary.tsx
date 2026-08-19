@@ -104,7 +104,6 @@ export function PlayerSummary() {
               <article className={styles.newsItem}>
                 <div className={styles.newsMeta}>
                   <time dateTime="2026-08-01">2026/08/01</time>
-                  <span className={styles.newsAuthor}>Toosy</span>
                 </div>
                 <div className={styles.newsTitle}>
                   Toosy slides into Trace Esports&apos; roster ahead of Stage 2

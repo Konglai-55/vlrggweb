@@ -2,7 +2,7 @@
   width: min(100%, 1160px);
   margin: 0 auto;
   color: #444;
-  background: #fff;
+  background: #fafaf9;
 }
 
 .identity {
@@ -48,7 +48,7 @@
 .playerName {
   margin: 0;
   color: #444;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -120,8 +120,15 @@
 .activeTab {
   color: #222;
   cursor: default;
-  border-top: 3px solid #d1545d;
-  padding-top: 0;
+  padding-top: 3px;
+}
+
+.tab:first-child {
+  width: 91px;
+}
+
+.tab:nth-child(2) {
+  width: 116px;
 }
 
 .activeTab::before {
@@ -166,7 +173,7 @@
   }
 
   .playerName {
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .realName {
@@ -199,6 +206,6 @@
 
 @media (max-width: 390px) {
   .playerName {
-    font-size: 15px;
+    font-size: 17px;
   }
 }
