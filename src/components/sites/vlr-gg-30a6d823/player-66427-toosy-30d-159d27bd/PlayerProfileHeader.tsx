@@ -6,15 +6,29 @@ import styles from "./PlayerProfileHeader.module.css";
 const ASSET_ROOT =
   "/sites/vlr-gg-30a6d823/player-66427-toosy-30d-159d27bd";
 
-export function PlayerProfileHeader() {
+type PlayerProfileHeaderProps = {
+  assetRoot?: string;
+  avatarImage?: string;
+  playerHandle?: string;
+  realName?: string;
+  playerPath?: string;
+};
+
+export function PlayerProfileHeader({
+  assetRoot = ASSET_ROOT,
+  avatarImage = "tenson.png",
+  playerHandle = "Tenson",
+  realName = "Wang Zhibin（王志斌）",
+  playerPath = "/player/66427/Tenson/?timespan=30d",
+}: PlayerProfileHeaderProps) {
   return (
     <section className={styles.profileShell} aria-labelledby="player-name">
       <div className={styles.identity}>
         <div className={styles.avatar}>
           <Image
             className={styles.avatarImage}
-            src={`${ASSET_ROOT}/tenson.png`}
-            alt="Tenson"
+            src={`${assetRoot}/${avatarImage}`}
+            alt={playerHandle}
             width={120}
             height={120}
             priority
@@ -24,15 +38,15 @@ export function PlayerProfileHeader() {
         <div className={styles.playerDetails}>
           <div className={styles.nameLine}>
             <h1 id="player-name" className={styles.playerName}>
-              Tenson
+              {playerHandle}
             </h1>
-            <span className={styles.realName}>Wang Zhibin（王志斌）</span>
+            <span className={styles.realName}>{realName}</span>
           </div>
 
           <div className={styles.country}>
             <Image
               className={styles.flag}
-              src={`${ASSET_ROOT}/flag-cn.png`}
+              src={`${assetRoot}/flag-cn.png`}
               alt=""
               width={16}
               height={11}
@@ -45,7 +59,7 @@ export function PlayerProfileHeader() {
       <nav className={styles.tabs} aria-label="Player profile sections">
         <Link
           className={`${styles.tab} ${styles.activeTab}`}
-          href="/player/66427/Tenson/?timespan=30d"
+          href={playerPath}
           aria-current="page"
         >
           Overview

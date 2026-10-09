@@ -12,6 +12,20 @@ const timeSpans = ["30d", "60d", "90d", "All"] as const;
 
 type TimeSpan = (typeof timeSpans)[number];
 
+type Team = {
+  image: string;
+  name: string;
+  detail?: string;
+};
+
+type PlayerSummaryProps = {
+  assetRoot?: string;
+  currentTeam?: Team;
+  pastTeam?: Team;
+  newsDate?: string;
+  newsTitle?: string;
+};
+
 type SectionLabelProps = {
   children: React.ReactNode;
 };
@@ -21,19 +35,20 @@ function SectionLabel({ children }: SectionLabelProps) {
 }
 
 type TeamCardProps = {
+  assetRoot: string;
   image: string;
   name: string;
   detail?: string;
 };
 
-function TeamCard({ image, name, detail }: TeamCardProps) {
+function TeamCard({ assetRoot, image, name, detail }: TeamCardProps) {
   return (
     <div className={styles.card}>
       <div className={styles.teamItem}>
         <div className={styles.teamLogoWrap}>
           <Image
             className={styles.teamLogo}
-            src={`${ASSET_ROOT}/${image}`}
+            src={`${assetRoot}/${image}`}
             alt=""
             width={40}
             height={40}
@@ -48,7 +63,17 @@ function TeamCard({ image, name, detail }: TeamCardProps) {
   );
 }
 
-export function PlayerSummary() {
+export function PlayerSummary({
+  assetRoot = ASSET_ROOT,
+  currentTeam = {
+    image: "trace-esports.png",
+    name: "Trace Esports",
+    detail: "joined in August 2026",
+  },
+  pastTeam = { image: "havoc-yonder.png", name: "Havoc & Yonder Gaming" },
+  newsDate = "2026-08-01",
+  newsTitle = "Toosy slides into Trace Esports' roster ahead of Stage 2 Play-Ins",
+}: PlayerSummaryProps) {
   const [activeTimeSpan, setActiveTimeSpan] = useState<TimeSpan>("30d");
 
   return (
@@ -88,14 +113,10 @@ export function PlayerSummary() {
             </div>
 
             <SectionLabel>Current Teams</SectionLabel>
-            <TeamCard
-              image="trace-esports.png"
-              name="Trace Esports"
-              detail="joined in August 2026"
-            />
+            <TeamCard assetRoot={assetRoot} {...currentTeam} />
 
             <SectionLabel>Past Teams</SectionLabel>
-            <TeamCard image="havoc-yonder.png" name="Havoc & Yonder Gaming" />
+            <TeamCard assetRoot={assetRoot} {...pastTeam} />
           </div>
 
           <aside className={styles.secondaryColumn}>
@@ -103,11 +124,10 @@ export function PlayerSummary() {
             <div className={styles.card}>
               <article className={styles.newsItem}>
                 <div className={styles.newsMeta}>
-                  <time dateTime="2026-08-01">2026/08/01</time>
+                  <time dateTime={newsDate}>{newsDate.replaceAll("-", "/")}</time>
                 </div>
                 <div className={styles.newsTitle}>
-                  Toosy slides into Trace Esports&apos; roster ahead of Stage 2
-                  Play-Ins
+                  {newsTitle}
                 </div>
               </article>
             </div>
