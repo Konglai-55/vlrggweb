@@ -21,9 +21,10 @@ type Team = {
 type PlayerSummaryProps = {
   assetRoot?: string;
   currentTeam?: Team;
-  pastTeam?: Team;
-  newsDate?: string;
-  newsTitle?: string;
+  pastTeam?: Team | null;
+  newsDate?: string | null;
+  newsTitle?: string | null;
+  totalWinnings?: string | null;
 };
 
 type SectionLabelProps = {
@@ -73,6 +74,7 @@ export function PlayerSummary({
   pastTeam = { image: "havoc-yonder.png", name: "Havoc & Yonder Gaming" },
   newsDate = "2026-08-01",
   newsTitle = "Toosy slides into Trace Esports' roster ahead of Stage 2 Play-Ins",
+  totalWinnings = "$0",
 }: PlayerSummaryProps) {
   const [activeTimeSpan, setActiveTimeSpan] = useState<TimeSpan>("30d");
 
@@ -116,27 +118,33 @@ export function PlayerSummary({
             <TeamCard assetRoot={assetRoot} {...currentTeam} />
 
             <SectionLabel>Past Teams</SectionLabel>
-            <TeamCard assetRoot={assetRoot} {...pastTeam} />
+            {pastTeam ? (
+              <TeamCard assetRoot={assetRoot} {...pastTeam} />
+            ) : (
+              <div className={`${styles.card} ${styles.emptyCard}`}>No past teams</div>
+            )}
           </div>
 
           <aside className={styles.secondaryColumn}>
             <SectionLabel>Latest News</SectionLabel>
-            <div className={styles.card}>
+            {newsTitle ? <div className={styles.card}>
               <article className={styles.newsItem}>
-                <div className={styles.newsMeta}>
+                {newsDate ? <div className={styles.newsMeta}>
                   <time dateTime={newsDate}>{newsDate.replaceAll("-", "/")}</time>
-                </div>
+                </div> : null}
                 <div className={styles.newsTitle}>
                   {newsTitle}
                 </div>
               </article>
-            </div>
+            </div> : (
+              <div className={`${styles.card} ${styles.emptyCard}`}>No news available</div>
+            )}
 
             <SectionLabel>Event Placements</SectionLabel>
             <div className={styles.card}>
               <div className={styles.winnings}>
                 <div className={styles.moduleLabel}>Total Winnings</div>
-                <div className={styles.winningsAmount}>$0</div>
+                <div className={styles.winningsAmount}>{totalWinnings ?? "—"}</div>
               </div>
             </div>
           </aside>

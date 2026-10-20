@@ -34,6 +34,10 @@
   background: #eee;
 }
 
+.avatarTop {
+  object-position: center top;
+}
+
 .playerDetails {
   min-width: 0;
   padding-top: 9px;

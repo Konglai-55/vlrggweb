@@ -9,6 +9,7 @@ const ASSET_ROOT =
 type PlayerProfileHeaderProps = {
   assetRoot?: string;
   avatarImage?: string;
+  avatarPosition?: "center" | "top";
   playerHandle?: string;
   realName?: string;
   playerPath?: string;
@@ -17,6 +18,7 @@ type PlayerProfileHeaderProps = {
 export function PlayerProfileHeader({
   assetRoot = ASSET_ROOT,
   avatarImage = "tenson.png",
+  avatarPosition = "center",
   playerHandle = "Tenson",
   realName = "Wang Zhibin（王志斌）",
   playerPath = "/player/66427/Tenson/?timespan=30d",
@@ -26,7 +28,7 @@ export function PlayerProfileHeader({
       <div className={styles.identity}>
         <div className={styles.avatar}>
           <Image
-            className={styles.avatarImage}
+            className={`${styles.avatarImage} ${avatarPosition === "top" ? styles.avatarTop : ""}`}
             src={`${assetRoot}/${avatarImage}`}
             alt={playerHandle}
             width={120}
