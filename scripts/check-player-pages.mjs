@@ -4,6 +4,7 @@ import { readFile } from "node:fs/promises";
 
 const base = process.env.PLAYER_CHECK_BASE_URL || "http://127.0.0.1:4511";
 const profiles = [
+  { path: "/player/Finally/", handle: "Finally", name: "江牧聪", team: "AG Young" },
   { path: "/player/Yun/", handle: "Yun", name: "倪国钧", team: "Trace Esports" },
   { path: "/player/Ziooo/", handle: "Ziooo", name: "许子扬", team: "AG Young" },
   { path: "/player/Lincas/", handle: "Lincas", name: "李林巍", team: "AG Young" },
@@ -18,7 +19,7 @@ for (const profile of profiles) {
   for (const text of [profile.handle, profile.name, profile.team]) {
     assert.ok(html.includes(text), `${profile.path} is missing ${text}`);
   }
-  if (["Lincas", "Ziooo", "Yun"].includes(profile.handle)) {
+  if (["Lincas", "Ziooo", "Yun", "Finally"].includes(profile.handle)) {
     assert.ok(html.includes(`<title>${profile.handle}（${profile.name}）: Valorant Player Profile | VLR.gg</title>`));
     assert.ok(html.includes("No past teams"));
     assert.ok(html.includes("No news available"));
@@ -33,7 +34,7 @@ for (const profile of profiles) {
   console.log(`PASS ${profile.path}`);
 }
 
-for (const player of ["lincas", "ziooo", "yun"]) {
+for (const player of ["lincas", "ziooo", "yun", "finally"]) {
   const assetRoot = `/sites/vlr-gg-30a6d823/player-${player}`;
   for (const image of [`${player}.jpg`, player === "yun" ? "trace-esports.png" : "ag-young.png", "flag-cn.png"]) {
     const response = await fetch(new URL(`${assetRoot}/${image}`, base));

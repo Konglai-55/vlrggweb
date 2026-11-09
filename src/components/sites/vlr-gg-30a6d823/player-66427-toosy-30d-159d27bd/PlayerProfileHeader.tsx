@@ -9,7 +9,7 @@ const ASSET_ROOT =
 type PlayerProfileHeaderProps = {
   assetRoot?: string;
   avatarImage?: string;
-  avatarPosition?: "center" | "top" | "upper-body";
+  avatarPosition?: "center" | "top" | "upper-body" | "framed-portrait";
   playerHandle?: string;
   realName?: string;
   playerPath?: string;
@@ -28,7 +28,7 @@ export function PlayerProfileHeader({
       <div className={styles.identity}>
         <div className={styles.avatar}>
           <Image
-            className={`${styles.avatarImage} ${avatarPosition === "top" ? styles.avatarTop : ""} ${avatarPosition === "upper-body" ? styles.avatarUpperBody : ""}`}
+            className={`${styles.avatarImage} ${avatarPosition === "top" ? styles.avatarTop : ""} ${avatarPosition === "upper-body" ? styles.avatarUpperBody : ""} ${avatarPosition === "framed-portrait" ? styles.avatarFramedPortrait : ""}`}
             src={`${assetRoot}/${avatarImage}`}
             alt={playerHandle}
             width={120}
