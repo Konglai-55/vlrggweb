@@ -29,10 +29,11 @@ type PlayerSummaryProps = {
 
 type SectionLabelProps = {
   children: React.ReactNode;
+  id?: string;
 };
 
-function SectionLabel({ children }: SectionLabelProps) {
-  return <h2 className={styles.sectionLabel}>{children}</h2>;
+function SectionLabel({ children, id }: SectionLabelProps) {
+  return <h2 className={styles.sectionLabel} id={id}>{children}</h2>;
 }
 
 type TeamCardProps = {
@@ -109,7 +110,7 @@ export function PlayerSummary({
               No agent data available for this period
             </div>
 
-            <SectionLabel>Recent Results</SectionLabel>
+            <SectionLabel id="match-history">Recent Results</SectionLabel>
             <div className={`${styles.card} ${styles.emptyCard}`}>
               No match history
             </div>

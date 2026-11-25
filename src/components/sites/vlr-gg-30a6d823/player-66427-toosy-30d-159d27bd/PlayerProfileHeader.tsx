@@ -9,6 +9,7 @@ const ASSET_ROOT =
 type PlayerProfileHeaderProps = {
   assetRoot?: string;
   avatarImage?: string;
+  avatarSrc?: string;
   avatarPosition?: "center" | "top" | "upper-body" | "framed-portrait";
   playerHandle?: string;
   realName?: string;
@@ -18,6 +19,7 @@ type PlayerProfileHeaderProps = {
 export function PlayerProfileHeader({
   assetRoot = ASSET_ROOT,
   avatarImage = "tenson.png",
+  avatarSrc,
   avatarPosition = "center",
   playerHandle = "Tenson",
   realName = "Wang Zhibin（王志斌）",
@@ -29,7 +31,8 @@ export function PlayerProfileHeader({
         <div className={styles.avatar}>
           <Image
             className={`${styles.avatarImage} ${avatarPosition === "top" ? styles.avatarTop : ""} ${avatarPosition === "upper-body" ? styles.avatarUpperBody : ""} ${avatarPosition === "framed-portrait" ? styles.avatarFramedPortrait : ""}`}
-            src={`${assetRoot}/${avatarImage}`}
+            src={avatarSrc ?? `${assetRoot}/${avatarImage}`}
+            unoptimized={Boolean(avatarSrc)}
             alt={playerHandle}
             width={120}
             height={120}
