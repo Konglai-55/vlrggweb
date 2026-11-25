@@ -3,6 +3,10 @@ import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 
 const base = process.env.PLAYER_CHECK_BASE_URL || "http://127.0.0.1:4511";
+const home = await fetch(new URL("/", base), { redirect: "manual" });
+assert.equal(home.status, 307, "The homepage should open the Taurus profile");
+assert.equal(new URL(home.headers.get("location"), base).pathname, "/player/Taurus");
+
 const profiles = [
   { path: "/player/Ivring/", handle: "Ivring", name: "周柯烨", team: "AG Young" },
   { path: "/player/Finally/", handle: "Finally", name: "江牧聪", team: "AG Young" },
