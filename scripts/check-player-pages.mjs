@@ -55,7 +55,10 @@ assert.equal(taurus.status, 200);
 const taurusHtml = await taurus.text();
 assert.match(taurusHtml, /<h1[^>]*>Taurus<\/h1>/);
 assert.match(taurusHtml, /曹铠瑞/);
-assert.match(taurusHtml, /<dd>AG Young<\/dd>/);
+assert.match(taurusHtml, /<dd><strong>AG Young<\/strong><\/dd>/);
+for (const section of ["常用特工", "比赛记录", "战队经历", "最新动态", "赛事成绩"]) {
+  assert.ok(taurusHtml.includes(`<h2>${section}</h2>`), `Missing section: ${section}`);
+}
 assert.match(taurusHtml, /src="\/players\/taurus\.jpg"/);
 
 const taurusPortrait = await fetch(new URL("/players/taurus.jpg", base));
