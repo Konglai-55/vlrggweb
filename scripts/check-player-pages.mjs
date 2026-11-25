@@ -8,6 +8,7 @@ assert.equal(home.status, 307, "The homepage should open the Taurus profile");
 assert.equal(new URL(home.headers.get("location"), base).pathname, "/player/Taurus");
 
 const profiles = [
+  { path: "/player/Taurus/", handle: "Taurus", name: "曹铠瑞", team: "AG Young" },
   { path: "/player/Ivring/", handle: "Ivring", name: "周柯烨", team: "AG Young" },
   { path: "/player/Finally/", handle: "Finally", name: "江牧聪", team: "AG Young" },
   { path: "/player/Yun/", handle: "Yun", name: "倪国钧", team: "Trace Esports" },
@@ -24,7 +25,7 @@ for (const profile of profiles) {
   for (const text of [profile.handle, profile.name, profile.team]) {
     assert.ok(html.includes(text), `${profile.path} is missing ${text}`);
   }
-  if (["Lincas", "Ziooo", "Yun", "Finally", "Ivring"].includes(profile.handle)) {
+  if (["Lincas", "Ziooo", "Yun", "Finally", "Ivring", "Taurus"].includes(profile.handle)) {
     assert.ok(html.includes(`<title>${profile.handle}（${profile.name}）: Valorant Player Profile | VLR.gg</title>`));
     assert.ok(html.includes("No past teams"));
     assert.ok(html.includes("No news available"));
@@ -60,6 +61,8 @@ const taurusHtml = await taurus.text();
 assert.match(taurusHtml, /<h1[^>]*>Taurus<\/h1>/);
 assert.match(taurusHtml, /曹铠瑞/);
 assert.match(taurusHtml, /AG Young/);
+assert.match(taurusHtml, /<header\b/);
+assert.match(taurusHtml, /<footer\b/);
 for (const section of ["Agents", "Recent Results", "Current Teams", "Past Teams", "Latest News", "Event Placements"]) {
   assert.ok(taurusHtml.includes(`>${section}</h2>`), `Missing section: ${section}`);
 }
