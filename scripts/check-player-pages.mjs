@@ -49,3 +49,17 @@ for (const player of ["lincas", "ziooo", "yun", "finally", "ivring"]) {
     console.log(`PASS ${image}`);
   }
 }
+
+const taurus = await fetch(new URL("/player/Taurus/", base));
+assert.equal(taurus.status, 200);
+const taurusHtml = await taurus.text();
+assert.match(taurusHtml, /<h1[^>]*>Taurus<\/h1>/);
+assert.match(taurusHtml, /曹铠瑞/);
+assert.match(taurusHtml, /<dd>AG Young<\/dd>/);
+assert.match(taurusHtml, /src="\/players\/taurus\.jpg"/);
+
+const taurusPortrait = await fetch(new URL("/players/taurus.jpg", base));
+assert.equal(taurusPortrait.status, 200);
+const localTaurusPortrait = await readFile(new URL("../public/players/taurus.jpg", import.meta.url));
+assert.deepEqual(Buffer.from(await taurusPortrait.arrayBuffer()), localTaurusPortrait);
+console.log("PASS /player/Taurus/ and uploaded portrait");
